@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tan_background"
+    android:minHeight="88dp"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
+        android:background="@color/tan_background"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:layout_toRightOf="@+id/imageView"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+
+        android:paddingStart="16dp">
+
+        <TextView
+            android:id="@+id/textViewMiwok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+
+            tools:text="lutti" />
+
+        <TextView
+            android:id="@+id/textViewEnglish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+
+            android:textColor="#FFFFFF"
+            tools:text="one" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_play_arrow" />
+</RelativeLayout>
